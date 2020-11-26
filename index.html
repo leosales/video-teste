@@ -61,12 +61,12 @@
 
                                     <vime-control>
                                         <vime-seek-backward>
-                                            <vime-icon href="#vime-seek-backward"></vime-icon>
+                                            <vime-icon onclick="seekForward()" href="#vime-seek-backward"></vime-icon>
                                         </vime-seek-backward>
                                     </vime-control>
                                     <vime-control>
                                         <vime-seek-forward>
-                                            <vime-icon href="#vime-seek-forward"></vime-icon>
+                                            <vime-icon onclick="seekDownForward()" href="#vime-seek-forward"></vime-icon>
                                         </vime-seek-forward>
                                     </vime-control>
 
@@ -91,9 +91,30 @@
                       </vime-default-ui>
                 </vime-player>
 
-                <a href="#" class="btn btn-outline-primary">voltar 10</a>
-                <a href="#" class="btn btn-outline-primary">avancar 10</a>
+                <a href="javascript:void(0)" onclick="seekDownForward()" class="btn btn-outline-primary">voltar 10</a>
+                <a href="#" onclick="seekForward()" class="btn btn-outline-primary">avancar 10</a>
             </div>
+
+            <script type="text/javascript">
+                
+                const player = document.querySelector('vime-player');
+
+                // Example function to showcase updating property.
+                const seekForward = () => {
+                    player.currentTime += 10;
+                };
+
+                const seekDownForward = () => {
+                    player.currentTime -= 10;
+                };
+
+                // Example function to showcase calling player method.
+                const enterFullscreen = () => {
+                    player.enterFullscreen();
+                };
+
+            </script>
+
         </div>
     </div>
 
