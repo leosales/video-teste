@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="geo.country" content="BR"/>
+
+    <title>Home</title>
+
+    <meta name="theme-color" content="#9b75fb">
+    <meta name="msapplication-navbutton-color" content="#9b75fb">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <link rel="canonical" href=""/>
+
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@vime/core@^4/themes/default.css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-10">
+
+                <vime-player>
+                    <vime-video poster="images/maxresdefault.jpg" cross-origin>
+
+                        <!-- Why `data-src`? Lazy loading. You can always use `src` if you don't need it. -->
+                        <source data-src="video/videoplayback.mp4" type="video/mp4" />
+<!--                        <source data-src="https://r4-&#45;&#45;sn-bg07dnzs.googlevideo.com/videoplayback?expire=1606357395&ei=M72-X9iNGsn2xwTUs6jgDA&ip=179.34.46.103&id=o-AGInuV5TlPGPmLU54ya2_PG9ifnNLwS9P6X0aU07qfqj&itag=18&source=youtube&requiressl=yes&gcr=br&vprv=1&mime=video%2Fmp4&ns=doce2YdChIsNI3bM5B_xfLQF&gir=yes&clen=14790338&ratebypass=yes&dur=193.631&lmt=1569641944163093&fvip=4&c=WEB&txp=5531432&n=Usc3GZXm7LaIZFvzuZN&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cgcr%2Cvprv%2Cmime%2Cns%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRgIhAMGpcMyrneYFK_ben3nt4y1UQHoQbX1NsxXgWGPq8ZrnAiEAtaJwlDnBm6thhPZ3OcULx1wLIMTz_UwSr-Lz_1C9H9c%3D&rm=sn-uphcg51pa-bpbe7z,sn-gpvee7z&req_id=e0c8781172bea3ee&redirect_counter=2&cms_redirect=yes&ipbypass=yes&mh=bG&mip=177.10.253.242&mm=30&mn=sn-bg07dnzs&ms=nxu&mt=1606347857&mv=m&mvi=4&pl=24&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRgIhANH18laxg-KCHZyHT8AHqgyws33bjWRR8J3d_LAQeWLlAiEAwQBRmujkqReDMU11T4aiGYazzQMUlCFSBBDtpCAoors%3D" type="video/mp4" />-->
+
+                    </vime-video>
+
+                    <!-- Loads the default Vime UI. -->
+                    <vime-default-ui no-controls>
+                        <!-- We setup the default controls and pass in any options.  -->
+                        <vime-default-controls
+                          hide-on-mouse-leave
+                          active-duration="2000"
+                        ></vime-default-controls>
+                    </vime-default-ui>
+
+                </vime-player>
+
+                <a href="#" class="btn btn-outline-primary">voltar 10</a>
+                <a href="#" class="btn btn-outline-primary">avancar 10</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@vime/core@^4/dist/vime/vime.esm.js"></script>
+
+</body>
+</html>
